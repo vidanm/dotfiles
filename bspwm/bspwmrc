@@ -1,0 +1,30 @@
+#! /bin/sh
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+bspc monitor -d I II III IV V VI VII VIII IX X
+
+bspc config border_width         0
+bspc config window_gap        5 
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+#bspc config border_radius 0
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+bspc rule -a Alacritty state=pseudo_tiled rectangle 1100x1000+0+0 center=true
+bspc rule -a Zathura state=tiled
+bspc rule -a Feh state=pseudo_tiled
+
+wal -i ~/Wallpapers/Abstract.jpg
+picom &
+exec ~/polybar-collection/launch.sh &
+#exec ~/.config/polybar/forest/launch.sh &
+wmname LG3D &
+touchegg &
+setxkbmap -layout us intl
+#setxkbmap -rules evdev -model evdev -layout us intl
+#hideIt.sh --name 'polybar-top_eDP-1' --region 0x0+1920+50 --direction top --steps 0.4 &
+#hideIt.sh --name 'bspwm' --region 0x1080+1920+-50 --direction bottom --steps 0.4

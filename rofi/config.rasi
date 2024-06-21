@@ -1,0 +1,7 @@
+/** Basic config file **/
+
+configuration {
+  terminal: "/usr/bin/alacritty";
+  show-icons:         true;
+  icon-theme:         "Papirus";
+}
