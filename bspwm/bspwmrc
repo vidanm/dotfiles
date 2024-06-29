@@ -18,7 +18,8 @@ bspc rule -a Alacritty state=pseudo_tiled rectangle 1100x1000+0+0 center=true
 bspc rule -a Zathura state=tiled
 bspc rule -a Feh state=pseudo_tiled
 
-wal -i ~/Wallpapers/Abstract.jpg
+exec random_wallpaper.sh &
+#wal -i ~/Wallpapers/Abstract.jpg
 picom &
 exec ~/polybar-collection/launch.sh &
 #exec ~/.config/polybar/forest/launch.sh &
