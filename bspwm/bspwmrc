@@ -18,13 +18,13 @@ bspc rule -a Alacritty state=pseudo_tiled rectangle 1100x1000+0+0 center=true
 bspc rule -a Zathura state=tiled
 bspc rule -a Feh state=pseudo_tiled
 
-exec random_wallpaper.sh &
-#wal -i ~/Wallpapers/Abstract.jpg
-picom &
+picom --animations -b &
+exec ~/Scripts/random_wallpaper.sh --dark &
 exec ~/polybar-collection/launch.sh &
-#exec ~/.config/polybar/forest/launch.sh &
+# Picom FTLABS Fork supports animations
 wmname LG3D &
 touchegg &
+exec ~/polybar-collection/launch.sh &
 setxkbmap -layout us intl
 #setxkbmap -rules evdev -model evdev -layout us intl
 #hideIt.sh --name 'polybar-top_eDP-1' --region 0x0+1920+50 --direction top --steps 0.4 &

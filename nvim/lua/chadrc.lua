@@ -6,7 +6,7 @@ local M = {}
 
 M.ui = {
   theme = "ayu_dark",
-  --theme_toggle = {"ayu_dark","nord" },
+  theme_toggle = {"ayu_dark","ayu_light" },
   transparency=true
 	-- hl_override = {
 	-- 	Comment = { italic = true },

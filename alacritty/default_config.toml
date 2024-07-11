@@ -1,0 +1,13 @@
+
+[font]
+size = 7
+
+[font.normal]
+family = "JetBrainsMono Nerd Font Mono"
+
+[window]
+blur = true
+
+[window.padding]
+x = 10
+y = 10
