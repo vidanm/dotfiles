@@ -11,7 +11,8 @@ local plugins = {
     opt = {
       ensure_installed = {
         "clangd",
-        "rust-analyzer"
+        "rust-analyzer",
+        "typescript-language-server"
       }
     }
   }

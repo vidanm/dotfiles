@@ -24,7 +24,6 @@ exec ~/polybar-collection/launch.sh &
 # Picom FTLABS Fork supports animations
 wmname LG3D &
 touchegg &
-exec ~/polybar-collection/launch.sh &
 setxkbmap -layout us intl
 #setxkbmap -rules evdev -model evdev -layout us intl
 #hideIt.sh --name 'polybar-top_eDP-1' --region 0x0+1920+50 --direction top --steps 0.4 &
