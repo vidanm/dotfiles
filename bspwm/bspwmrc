@@ -19,7 +19,7 @@ bspc rule -a Zathura state=tiled
 bspc rule -a Feh state=pseudo_tiled
 
 $HOME/Scripts/random_wallpaper.sh --dark &
-$HOME/polybar-collection/launch.sh &
+$HOME/.config/polybar-collection/launch.sh &
 picom --animations -b &
 #$HOME/.config/polybar/launch.sh --forest &
 # Picom FTLABS Fork supports animations
