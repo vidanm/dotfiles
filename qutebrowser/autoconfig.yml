@@ -10,6 +10,8 @@ settings:
     https://www.google.com: false
   content.javascript.clipboard:
     global: access
+  content.media.audio_capture:
+    https://meet.google.com: true
   content.pdfjs:
     global: false
   content.webgl:

@@ -2,6 +2,12 @@
 # wm independent hotkeys
 #
 
+super + d
+  ~/Scripts/darkmode.sh
+
+super + shift + d
+  ~/Scripts/lightmode.sh
+
 # terminal emulator
 super + Return
 	alacritty
@@ -25,10 +31,10 @@ super + shift + F10
 	maim -o -s -u ~/Images/screenshots/$(date +%s).png
 
 super + F6
-	sudo xbacklight -dec 2
+	sudo xbacklight -dec 5 
 
 super + F7
-	sudo xbacklight -inc 2
+	sudo xbacklight -inc 5 
 
 #
 # bspwm hotkeys
